@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bookmark App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <section role="adding-bookmarks">
+        <div class="add-box">
+            <form class="add-bookmark-form">
+
+                <p class="error-message"></p>
+                    <label for="title">title:</label>
+                    <input type="text" name="title" class="bookmark-title" placeholder="the most interesting bookmark in the world"/>
+                    <label for="desc">description:</label>
+                    <input type="text" name="desc" class="bookmark-description" placeholder="about the bookmark here"/>
+                    <label for="url">URL:</label>
+                    <input type="text" name="url" class="bookmark-url" placeholder="www.thebestbookmark.com"/>
+                    <label for="rating">rating:</label>
+                    <select name="rating" class="bookmark-rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                    <button class="clear-button">clear</button>
+                </form>
+        </div>
+    </section>
+
+    <main role="bookmarks">
+        <span for="rating-filter">Filter bookmarks by rating:</span>
+        <select name="rating-filter" class="bookmark-rating-filter">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        
+            <ul class="bookmark-list">   
+            </ul>
+        
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="scripts/store.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/bookmark.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

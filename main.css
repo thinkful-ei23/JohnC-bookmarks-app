@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none
+}
+
+.error-message{
+    color: red;
+    text-align: center;
+}
+main{
+    text-align: center;
+}
+
+.add-box{
+    height:100px;
+    width: 50%;
+    border: 3px solid grey;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookmark-box{
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 2px solid grey;
+    width: 50%;
+}
+.bookmark-box div{
+    height: 20px;
+}
+
+.bookmark-box span{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width:640px){
+    .bookmark-box{
+        width: 25%;
+    }
+
+}
